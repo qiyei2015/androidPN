@@ -60,8 +60,7 @@
           <unit-entry name="hibernate.cfg.xml" />
         </datasource-map>
         <naming-strategy-map />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/WebRoot/WEB-INF/classes/hibernate.cfg.xml" />
-        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/resources/hibernate.cfg.xml" />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
       </configuration>
     </facet>
     <facet type="web" name="Web">
@@ -78,7 +77,9 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <dependency>web application context</dependency>
+          <file>file://$MODULE_DIR$/resources/spring-config.xml</file>
         </fileset>
+        <fileset id="fileset2" name="Spring Application Context (2)" removed="false" />
       </configuration>
     </facet>
   </component>
